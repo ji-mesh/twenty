@@ -24,9 +24,12 @@ export class WorkspaceMemberQueryResultGetterHandler implements QueryResultGette
     );
 
     if (!isDefined(fileId)) {
+      // DEV-162: demo seeds carry static pfp URLs (e.g. /images/pfp/*.svg)
+      // that are not server-storage files. Pass them through untouched
+      // instead of blanking, so seeded workspace members show real faces.
       return {
         ...workspaceMember,
-        avatarUrl: '',
+        avatarUrl: workspaceMember.avatarUrl,
       };
     }
 
