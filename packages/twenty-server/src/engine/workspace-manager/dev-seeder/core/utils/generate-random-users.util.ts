@@ -533,6 +533,7 @@ export function generateRandomUsers(): {
       colorScheme: COLOR_SCHEMES[colorSchemeIndex],
       userEmail: email,
       userId,
+      avatarUrl: '',
     });
   }
 

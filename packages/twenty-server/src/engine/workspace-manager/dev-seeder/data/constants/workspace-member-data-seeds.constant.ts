@@ -13,6 +13,7 @@ type WorkspaceMemberDataSeed = {
   colorScheme: string;
   userEmail: string;
   userId: string;
+  avatarUrl: string;
 };
 
 export const WORKSPACE_MEMBER_DATA_SEED_COLUMNS: (keyof WorkspaceMemberDataSeed)[] =
@@ -24,6 +25,7 @@ export const WORKSPACE_MEMBER_DATA_SEED_COLUMNS: (keyof WorkspaceMemberDataSeed)
     'colorScheme',
     'userEmail',
     'userId',
+    'avatarUrl',
   ];
 
 export const WORKSPACE_MEMBER_DATA_SEED_IDS = {
@@ -50,6 +52,7 @@ const originalWorkspaceMembers: WorkspaceMemberDataSeed[] = [
     colorScheme: 'System',
     userEmail: 'tim@apple.dev',
     userId: USER_DATA_SEED_IDS.TIM,
+    avatarUrl: '/images/pfp/founder.svg',
   },
   {
     id: WORKSPACE_MEMBER_DATA_SEED_IDS.JONY,
@@ -59,6 +62,7 @@ const originalWorkspaceMembers: WorkspaceMemberDataSeed[] = [
     colorScheme: 'System',
     userEmail: 'jony.ive@apple.dev',
     userId: USER_DATA_SEED_IDS.JONY,
+    avatarUrl: '/images/pfp/man7.svg',
   },
   {
     id: WORKSPACE_MEMBER_DATA_SEED_IDS.PHIL,
@@ -68,6 +72,7 @@ const originalWorkspaceMembers: WorkspaceMemberDataSeed[] = [
     colorScheme: 'System',
     userEmail: 'phil.schiler@apple.dev',
     userId: USER_DATA_SEED_IDS.PHIL,
+    avatarUrl: '/images/pfp/man6.svg',
   },
   {
     id: WORKSPACE_MEMBER_DATA_SEED_IDS.JANE,
@@ -77,6 +82,7 @@ const originalWorkspaceMembers: WorkspaceMemberDataSeed[] = [
     colorScheme: 'System',
     userEmail: 'jane.austen@apple.dev',
     userId: USER_DATA_SEED_IDS.JANE,
+    avatarUrl: '/images/pfp/product.svg',
   },
 ];
 
@@ -91,6 +97,7 @@ const appleOnlyWorkspaceMembers: WorkspaceMemberDataSeed[] = [
     colorScheme: 'System',
     userEmail: 'scott.forstall@apple.dev',
     userId: USER_DATA_SEED_IDS.SCOTT,
+    avatarUrl: '/images/pfp/sales2.svg',
   },
 ];
 
